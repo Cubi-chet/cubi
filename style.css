@@ -1,0 +1,67 @@
+
+body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #111; color: #fff; }
+button#theme-toggle { position: fixed; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; z-index: 10; cursor: pointer; }
+.container { max-width: 1000px; margin: auto; padding: 2rem; }
+.section { display: none; }
+.section.active { display: block; }
+.card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; transition: all 0.3s ease; }
+.card.show { transform: translateY(0); opacity: 1; }
+.highlight { padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: bold; }
+.green { background: #28a745; } .orange { background: #fd7e14; } .red { background: #dc3545; } .pink { background: #ff69b4; }
+.terminal { font-family: monospace; background: #333; color: #00ff88; padding: 1rem; border-radius: 8px; margin-top: 1rem; box-shadow: 0 0 15px rgba(0,255,136,0.4); }
+.gradient-background, .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+footer .social-icons { display: flex; justify-content: center; gap: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 20px; }
+.icon-button { text-decoration: none; color: white; position: relative; }
+.icon-tooltip { display: none; position: absolute; bottom: 150%; left: 50%; transform: translateX(-50%); background: #333; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.75rem; white-space: nowrap; }
+.icon-button:hover .icon-tooltip { display: block; }
+/* === SOBRE MÍ AVANZADO === */
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info-box {
+    flex: 1 1 300px;
+    background: rgba(255,255,255,0.03);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tech-tag {
+    background: #6a11cb;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.about-desc {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.skills {
+    margin-top: 1rem;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.bar {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 4px;
+}
+
+.progress {
+    height: 100%;
+    background: #4caf50;
+}
+

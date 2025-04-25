@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubi♡ | MI VIDA SOCIAL</title>
+    <link rel="icon" type="image/png" href="favicon/max.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="play-music">🎵 Reproducir Música</button>
+    <audio id="bg-music" loop>
+        <source src="audio/El Taxi.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <button id="theme-toggle">🌓</button>
+    <div class="gradient-background"></div>
+    <div class="particles" id="particles"></div>
+
+    <main class="container">
+        <section id="home" class="section active">
+            <div class="card hero-card show">
+                <div class="hero-content">
+                    <h1>Hola, soy <span class="highlight green">Max</span> <img src="favicon/max.png" alt="Logo Max" class="logo-img"></h1>
+                    <p class="subtitle">Mis amigos me dicen <span class="highlight pink">Cubi♡</span>.</p>
+                    <p class="role">Soy <span class="highlight orange">Informático Principiante</span>.</p>
+                    <p class="cta">Revisa <span class="highlight red">Sobre mí</span>.</p>
+                    <div class="terminal">
+                        <span class="prompt">Señor</span> <span class="cmd">Bienvenido a mi infierno</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="about" class="section">
+    <div class="card about-card">
+        <h2>Sobre mí</h2>
+        <div class="about-grid">
+            <div class="info-box">
+                <h3><i class="fas fa-user-circle"></i> Información Personal</h3>
+                <p><strong>Nombre:</strong> Max</p>
+                <p><strong>Nickname:</strong> Cubi♡</p>
+                <p><strong>Edad:</strong> 16 años</p>
+                <p><strong>Ubicación:</strong> Barcelona, España</p>
+                <p><strong>Profesión:</strong> Informático Principiante</p>
+                <p><strong>Estudios:</strong> FP Básica de Informática</p>
+            </div>
+            <div class="info-box">
+                <h3><i class="fas fa-user-secret"></i> Tecnologías / Rol</h3>
+                <p><span class="tech-tag">Espía anti-hackers</span> en Discord</p>
+                <p><span class="tech-tag">Investigador de cuentas robadas</span></p>
+                <p><span class="tech-tag">Análisis de IPs</span> & comportamiento sospechoso</p>
+                <p><span class="tech-tag">Moderador creativo</span> y vigilante digital 👁️</p>
+            </div>
+        </div>
+        <p class="about-desc">
+            Soy una persona muy curiosa y comprometida con la seguridad en entornos digitales. Me dedico a observar, analizar y detectar comportamientos anómalos en servidores de Discord para proteger a la comunidad.
+        </p>
+        <p class="about-desc">
+            Me gusta trabajar en equipo, compartir conocimientos y sobre todo... que ningún hacker se me escape 😎.
+        </p>
+
+        <h3>Habilidades en Minecraft</h3>
+        <div class="skills">
+            <div class="skill"><i class="fas fa-cube"></i> Builder profesional con WorldEdit <div class="bar"><div class="progress" style="width: 100%;"></div></div></div>
+            <div class="skill"><i class="fas fa-tree"></i> Creatividad en mapas y decoraciones <div class="bar"><div class="progress" style="width: 90%;"></div></div></div>
+            <div class="skill"><i class="fas fa-magic"></i> Estructuras a gran escala <div class="bar"><div class="progress" style="width: 95%;"></div></div></div>
+        </div>
+    </div>
+</section>
+
+          <section id="projects" class="section">
+            <div class="card">
+                <h2>Proyectos</h2>
+                <p>Estoy trabajando en mis investigaciones contra hackers en Discord. No se me escapa ni uno.</p>
+                <img src="image/proyecto1.png" alt="Mi investigación en Discord" class="project-img">
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="card">
+                <h2>Contacto</h2>
+                <p>¿Quieres Conversar Conmigo?</p>
+                <div class="contact-links">
+                    <a href="mailto:max.segovia.gonzalez@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> <span>max.segovia.gonzalez@gmail.com</span></a>
+                    <a href="https://github.com/Cubi-chet" target="_blank" class="contact-link"><i class="fab fa-github"></i> <span>GitHub</span></a>
+                    <a href="https://x.com/Cubi_oficial" target="_blank" class="contact-link"><span>X</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#home" class="icon-button active" data-section="home"><div class="icon-container"><i class="fas fa-home"></i></div><span class="icon-tooltip">Inicio</span></a>
+            <a href="#about" class="icon-button" data-section="about"><div class="icon-container"><i class="fas fa-user"></i></div><span class="icon-tooltip">Sobre mí</span></a>
+            <a href="#projects" class="icon-button" data-section="projects"><div class="icon-container"><i class="fas fa-th-large"></i></div><span class="icon-tooltip">Proyectos</span></a>
+            <a href="#contact" class="icon-button" data-section="contact"><div class="icon-container"><i class="fas fa-envelope"></i></div><span class="icon-tooltip">Contacto</span></a>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('play-music').addEventListener('click', function () {
+        const music = document.getElementById('bg-music');
+        if (music.paused) {
+            music.play();
+            this.innerText = '🔇 Parar Música';
+        } else {
+            music.pause();
+            this.innerText = '🎵 Reproducir Música';
+        }
+    });
+
+    const navButtons = document.querySelectorAll('.icon-button[data-section]');
+    const sections = document.querySelectorAll('.section');
+
+    function showActiveSection(sectionId) {
+        sections.forEach(section => {
+            section.classList.remove('active');
+            if (section.id === sectionId) {
+                section.classList.add('active');
+            }
+        });
+
+        navButtons.forEach(button => {
+            button.classList.remove('active');
+            if (button.getAttribute('data-section') === sectionId) {
+                button.classList.add('active');
+            }
+        });
+    }
+
+    navButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('data-section');
+            showActiveSection(sectionId);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+        });
+        document.querySelectorAll('.card').forEach((card, index) => {
+            setTimeout(() => { card.classList.add('show'); }, index * 150);
+        });
+        const particlesContainer = document.getElementById('particles');
+        const numberOfParticles = 30;
+        function createParticles() {
+            particlesContainer.innerHTML = '';
+            for (let i = 0; i < numberOfParticles; i++) {
+                const p = document.createElement('div');
+                p.classList.add('particle');
+                const size = Math.random() * 5 + 2;
+                p.style.width = p.style.height = size + 'px';
+                p.style.left = Math.random() * 100 + '%';
+                p.style.top = Math.random() * 100 + '%';
+                p.style.opacity = Math.random() * 0.5 + 0.1;
+                p.style.animationDelay = Math.random() * 5 + 's';
+                p.style.setProperty('--duration', Math.random() * 10 + 10 + 's');
+                p.style.filter = `brightness(${Math.random() * 50 + 50}%)`;
+                p.style.backgroundColor = ['#9c77ff', '#6a11cb', '#2575fc', '#4e44ce'][Math.floor(Math.random() * 4)];
+                particlesContainer.appendChild(p);
+            }
+        }
+        createParticles();
+        window.addEventListener('resize', createParticles);
+    });
+    </script>
+</body>
+</html>
