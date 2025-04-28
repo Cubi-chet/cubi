@@ -64,4 +64,195 @@ footer .social-icons { display: flex; justify-content: center; gap: 1rem; paddin
     height: 100%;
     background: #4caf50;
 }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.personal-info, .skills-tags {
+  flex: 1 1 300px;
+  background: rgba(255,255,255,0.03);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.skills-tags {
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background: #8e2de2;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.neon-purple {
+  box-shadow: 0 0 10px #8e2de2, 0 0 20px #8e2de2;
+}
+
+.about-desc {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.minecraft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.mc-card {
+  flex: 1 1 250px;
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(142,45,226,0.3);
+}
+
+.mc-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.about-card-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about-left, .about-right {
+    flex: 1 1 300px;
+}
+
+.about-flex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: linear-gradient(180deg, #8e2de2, #4a00e0);
+    transform: translateX(-50%);
+    opacity: 0.6;
+    border-radius: 50px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #8e2de2;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.neon {
+    box-shadow: 0 0 10px #8e2de2, 0 0 20px #8e2de2, 0 0 30px #8e2de2;
+}
+
+.about-desc {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255,255,255,0.04);
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: #8e2de2;
+    flex-shrink: 0;
+}
+
+.info-text {
+    font-size: 1rem;
+    color: #fff;
+}
+.contact-card {
+    background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+    color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
 
